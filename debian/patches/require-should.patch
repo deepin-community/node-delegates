@@ -1,0 +1,22 @@
+From 451e37d2a83c4f000dd7b4c5176ba48aa8d8b3d9 Mon Sep 17 00:00:00 2001
+From: shanavas <shanavas.m2@gmail.com>
+Date: Fri, 28 Apr 2017 20:28:50 +0300
+Subject: [PATCH] Import should in tests
+
+Fixes #17
+---
+ test/index.js | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/test/index.js b/test/index.js
+index fdaf83a..32b38e7 100644
+--- a/test/index.js
++++ b/test/index.js
+@@ -1,6 +1,7 @@
+ 
+ var assert = require('assert');
+ var delegate = require('..');
++require('should');
+ 
+ describe('.method(name)', function(){
+   it('should delegate methods', function(){
